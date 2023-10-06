@@ -17,7 +17,7 @@ public class Selection3StudentIDNumber {
             case '+':
                 result = operand1 + operand2;
                 System.out.print(operand1 + " + " + operand2 + " = " + result);
-                break;
+                
              case '-':
                 result = operand1 - operand2;
                 System.out.print(operand1 + " - " + operand2 + " = " + result);
