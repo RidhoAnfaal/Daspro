@@ -19,8 +19,12 @@ public class Selection2Exp2StudentIDNumber {
                 System.out.println("Not a right triangle");
             }
         }
-        else
-            System.out.println("Not a triangle");
-        
+
+        if (angle1 == angle2 && angle1 == angle3) {
+            System.out.println("Equilateral triangle");
+        }else if (angle1 == angle2 || angle1 == angle3 || angle2 == angle3) {
+            System.out.println("Isosceles triangle");
+        }
+
     }
 }

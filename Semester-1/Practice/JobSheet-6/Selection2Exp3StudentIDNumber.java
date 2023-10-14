@@ -11,7 +11,7 @@ public class Selection2Exp3StudentIDNumber {
         System.out.print("Input income = ");
         income = inputStudentIDNumber.nextInt();
 
-        if (category.equalsIgnoreCase("worker")) {
+        if (category.equals("worker")) {
             if (income <= 2000000) {
                 tax = 0.1;
             }
@@ -22,7 +22,7 @@ public class Selection2Exp3StudentIDNumber {
                 tax = 0.2;
             netSalary = (int) (income - (tax * income));
             System.out.println("Net salary = "+netSalary);
-        }else if (category.equalsIgnoreCase("businessman")) {
+        }else if (category.equals("businessman")) {
             if (income <= 2500000) {
                 tax = 0.15;
             }
