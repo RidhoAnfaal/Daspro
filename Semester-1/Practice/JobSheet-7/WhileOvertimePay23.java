@@ -1,5 +1,4 @@
 import java.util.Scanner;
-
 public class WhileOvertimePay23 {
     public static void main(String[] args) {
 
@@ -25,11 +24,13 @@ public class WhileOvertimePay23 {
                 overtimePay = overtimeHours * 100000;
             }else if (position.equalsIgnoreCase("staff")) {
                 overtimePay = overtimeHours * 75000;
+            }else {
+                System.out.println("Invalid position!");
+                i--;
+                continue;
             }
-
             totalOvertimePay += overtimePay;
         }
-
         System.out.println("Total of Overtime Pay = "+totalOvertimePay);
     }
 }
